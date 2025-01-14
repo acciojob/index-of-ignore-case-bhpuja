@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Of Ignore Case</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container">
+        <h1>Find Index of Substring (Case Insensitive)</h1>
 
+        <!-- Input Form -->
+        <form id="indexForm">
+            <div>
+                <label for="mainString">Main String:</label>
+                <input type="text" id="mainString" placeholder="Enter main string">
+            </div>
+            <div>
+                <label for="subString">Substring:</label>
+                <input type="text" id="subString" placeholder="Enter substring">
+            </div>
+            <button type="submit">Find Index</button>
+        </form>
+
+        <!-- Result Display -->
+        <div id="result">
+            <p>Result: <span id="output">-</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>

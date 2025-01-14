@@ -1,8 +1,19 @@
-function indexOfIgnoreCase(s1, s2) {
-  // write your code here
+// Function to perform case-insensitive indexOf
+function indexOfIgnoreCase(str, subStr) {
+    const lowerStr = str.toLowerCase();
+    const lowerSubStr = subStr.toLowerCase();
+    return lowerStr.indexOf(lowerSubStr);
 }
 
-// Please do not change the code below
-const s1 = prompt("Enter s1:");
-const s2 = prompt("Enter s2:");
-alert(indexOfIgnoreCase(s1, s2));
+// Handling form submission
+document.getElementById('indexForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get input values
+    const mainString = document.getElementById('mainString').value;
+    const subString = document.getElementById('subString').value;
+
+    // Call the function and display the result
+    const result = indexOfIgnoreCase(mainString, subString);
+    document.getElementById('output').textContent = result;
+});
